@@ -1,4 +1,5 @@
 # Django settings for AubreysAngels project.
+import dj_database_url
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -18,6 +19,7 @@ DATABASES = {
         'HOST': '',                      # Set to empty string for localhost. Not used with sqlite3.
         'PORT': '',                      # Set to empty string for default. Not used with sqlite3.
     }
+
 }
 
 # Local time zone for this installation. Choices can be found here:

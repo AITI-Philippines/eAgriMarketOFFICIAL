@@ -1,18 +1,16 @@
 AubreysAngels
 =============
+Description:
+An inventory management and predictions system.
 
-Aubreys and her delivery boys
+Members of the team:
+Armond Ave, davecroman@gmail.com
+Jules Capacillo, jules.capacillo@gmail.com
+Aubrey Pascual, aubreypascual@facebook.com
+Francis Gallardo, squall_leonheart006@yahoo.com
 
-<<<<<<< HEAD
-This line was added by Armond Ave
-=======
-this line was addes by Jules Capacillo
->>>>>>> 14d6a49b681dbeb41c5be84feb5b40204fe4acdc
+Github URL:
+git@github.com:AITI-Philippines/AubreysAngels.git
 
-Edited by Aubs
-<<<<<<< HEAD
-Edited by Aubs2
-=======
-
-Edited by Francis
->>>>>>> a74b283ef219cdfb9caef5449a4c3424bfee3c44
+Prototype URL:
+davecroman.appspot.com

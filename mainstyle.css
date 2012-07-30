@@ -1,0 +1,87 @@
+.searchbar {
+	width: 390px;
+	padding: 5px;
+	padding-right: 40px;
+	outline: none;
+	border: 2px solid #999999;
+	border-radius: 5px;
+	background-color: #FBFBFB;
+	font-family: Cambria, Cochin, Georgia, serif;
+	font-size: 16px;
+	background-position: 270px -10px;
+	background-image: url('http://www.kirupa.com/images/search.png');
+	background-repeat: no-repeat;
+	
+
+}
+
+.searchbar:focus {
+	background-color: #FFFFFF;
+	border-color: #333333;
+	box-shadow: 0px 0px 25px -2px #333;
+	background-position: 270px -80px;
+}
+body {
+	padding: 10px;
+	background-color: #F4F4F4;
+    font-family: Arial;
+}
+ 
+.button3 {
+ 
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 13px;
+    color: #000;
+    padding: 5px 10px 5px 10px;
+ 
+    text-shadow: 0px 1px 1px #FFF;
+    text-decoration: none;
+ 
+    border-radius: 10px;
+ 
+    background: #dddddd;
+    
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffcc66', endColorstr='#ffe6b6', GradientType=0 );
+ 
+    cursor: pointer;
+ 
+}
+.button3:hover {
+    background: -moz-linear-gradient(top, #ffcc66 0%, #ffe6b6 50%, #ffe6b6 51%, #ffc75d 100%);
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffcc66), to(#ffe6b6), color-stop(0.4, #ffe6b6), color-stop(0.5, #fff), color-stop(.5, #fff), color-stop(0.9, #ffc75d));
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffe6b6', endColorstr='#ffe6b6', GradientType=0 );
+}
+
+.mytextfield {
+    width: 320px;
+    padding-right: 40px;
+	padding: 3px;
+    outline: none;
+    border: 2px solid #999999;
+	border-radius: 5px;
+    background-color: #FBFBFB;
+    font-family: Cambria, Cochin, Georgia, serif;
+    font-size: 16px;
+ 
+    -webkit-transition: background-color .2s ease-in,
+                        box-shadow .3s ease-in;
+                        
+    -moz-transition: background-color .2s ease-in,
+                        box-shadow .3s ease-in;
+                        
+    -o-transition: background-color .2s ease-in,
+                        box-shadow .3s ease-in;
+                        
+    -ms-transition: background-color .2s ease-in,
+                        box-shadow .3s ease-in;
+                        
+    transition: background-color .2s ease-in,
+                        box-shadow .3s ease-in;
+}
+
+.mytextfield:focus {
+	background-color: #FFFFFF;
+	border-color: #333333;
+	box-shadow: 0px 0px 25px -2px #333;
+}
+ 

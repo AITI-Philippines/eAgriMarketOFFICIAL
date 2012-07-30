@@ -1,0 +1,63 @@
+<head>
+	<link rel="stylesheet" href="/static/mainstyle.css" >
+	
+	<style>
+	#map_canvas {
+	height: 300px;
+	width:50%;
+	 }
+
+	</style>  
+</head>
+
+ <body >
+    <div  style="font:Arial">
+		<h1>
+			<span style="font-size: 28px; font-family: tahoma, geneva, sans-serif; ">
+			<span style="color:#0000cd;">e</span>AgriBiz </span>|&nbsp;<span style="color:#696969;">
+			<span style="font-family: tahoma, geneva, sans-serif; font-size: 22px; ">
+			Bridging gaps</span></span>
+		</h1>
+	</div>
+	
+	<hr noshade size=4 width="50%" align=left>
+	
+	<div>
+		<form>
+			<input type="text" name="search_query" class="searchbar"/>
+			<input type="submit" value="Search" class="button3">
+		</form>
+	</div>
+	
+	<hr noshade size=4 width="50%" align=left>
+
+	<div>
+		<table>
+		    <tr> <td> <h3> {{ dealer_name }} </h3> </td>  </tr>
+		</table>
+	</div>
+	
+	<div id="map_canvas"  ></div>
+	
+	<input type="button" id="show_map" onclick="showMap();" value="Show map" disabled = "disabled" class="button3"/>
+	
+	<div>
+	    <table>
+			<tr> <td> <a href="http://localhost:8000/profile"> My Profile </a> </td> <td> </td> </tr>
+			<tr> <td> <a href="http://localhost:8000/my_transactions"> My Transactions </a> </td> <td> </td> </tr>
+			<tr> <td> <a href="http://localhost:8000/my_store"> My Store </a> </td> </tr>
+			<tr> <td> <a href="http://localhost:8000/my_carts">My Carts<a> </td> <td> </td> </tr>
+			<tr> <td> <a href="http://localhost:8000/log_out">Logout <a> </td> <td> </td> </tr>
+	    </table>
+	</div>
+
+	<hr size=3 width="50%" align=left>
+
+	<div>
+	    <a href="http://localhost:8000/">Home</a>
+	</div>
+	
+	<script type="text/javascript" src="/static/jquery.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?region=GB&sensor=true&callback=initialize"></script>
+    <script type="text/javascript" src="/static/jquery/maps/mapshower.js"></script> 
+</body >

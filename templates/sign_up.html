@@ -1,0 +1,33 @@
+<head>
+	<link rel="stylesheet" href="/static/mainstyle.css" >
+	<div  style="font:Arial">
+		<h1>
+			<span style="font-size: 28px; font-family: tahoma, geneva, sans-serif; ">
+			<span style="color:#0000cd;">e</span>AgriBiz </span>|&nbsp;<span style="color:#696969;">
+			<span style="font-family: tahoma, geneva, sans-serif; font-size: 22px; ">
+			Bridging gaps</span></span>
+		</h1>
+	</div>
+</head>
+
+<hr noshade size=4 width="33%" align=left>
+<body>
+<form method="post">
+    <table>
+        <tr> <td> Business Name: </td> <td> <input type="text" name="business_name" value="{{name}}" class="mytextfield"/> </td><td>{{business_name_error}}</td></tr>
+        <tr> <td> Username: </td> <td> <input type="text" name="username" value="{{username}}"class="mytextfield"/> </td><td>{{name_error}}</td></tr>
+        <tr> <td> Password: </td> <td> <input type="password" name="user_password" value="{{user_password}}" class="mytextfield"/> </td> <td> {{password_error}} </td></tr>
+        <tr> <td> Re-enter Password: </td> <td> <input type="password" name="user_password_confirm" value="{{user_password_confirm}}" class="mytextfield"/> </td> <td><FONT COLOR="Red">{{password_confirm_error}}</FONT></td> </tr>
+        <tr> <td> E-mail Address: </td> <td> <input type="text" name="email_address" value="{{email_address}}" class="mytextfield"/> </td> <td> <FONT COLOR="Red">{{email_error}}</FONT> </td></tr>
+    </table>
+    <input type="submit" value="Sign Up" name="signUp_button" class="button3"/>
+</form>
+
+
+<hr size=3 width="33%" align=left>
+
+<div>
+    <a href="http://localhost:8000/">Home</a>
+</div>
+
+</body>

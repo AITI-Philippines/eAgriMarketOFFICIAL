@@ -1,0 +1,84 @@
+<head>
+    <link rel="stylesheet" href="/static/mainstyle.css" >
+	<link rel="stylesheet" href="/static/jquery/jquery.ui.all.css">
+	
+	<script src="/static/jquery/jquery-1.7.2.js"></script>
+	<script src="/static/jquery/jquery.ui.core.js"></script>
+	<script src="/static/jquery/jquery.ui.widget.js"></script>
+	<script src="/static/jquery/jquery.ui.position.js"></script>
+	<script src="/static/jquery/jquery.ui.autocomplete.js"></script>
+	 
+	<script type="text/javascript" src="/static/autocomplete.js">
+	</script>
+</head>
+
+<body>
+<hr noshade size=4 width="50%" align=left>
+<div>
+	<div  style="font:Arial">
+        <h1>
+            <span style="font-size: 28px; font-family: tahoma, geneva, sans-serif; ">
+            <span style="color:#0000cd;">e</span>AgriBiz </span>|&nbsp;<span style="color:#696969;">
+            <span style="font-family: tahoma, geneva, sans-serif; font-size: 22px; ">
+            Bridging gaps</span></span>
+        </h1>
+    </div>
+<form>
+<input type="text" name="search_query" class="searchbar" id="tags"/>
+<input type="submit" value="Search" class="button3">
+</form>
+</div>
+<hr noshade size=4 width="50%" align=left>
+
+<table>
+    <tr> <td> <h3> {{ dealer_name }} </h3> </td> </tr>
+    <tr> <td> <h4> My Store </h4> </td> </tr>
+</table>
+
+<table>
+{% for item in items_sold %}
+    <tr>
+        <td width="250px">{{ item.item_name }} </td>
+        <td width="100px">{{ item.item_price }} </td>
+		<td> <a href="http://localhost:8000/removeitem/{{ item.id }}"> Remove </a> </td>
+    </tr>
+{% endfor %}
+</table>
+
+{% if not add_pressed %}
+    <form method="post">
+        <table>
+            <tr><td></td><td><input type="submit" name="add_item" value="Add a product" class="button3" /></td> </tr>
+        </table>
+    </form>
+{% elif add_pressed %}
+    <br><br><b> Add a product </b>
+    <form method="post">
+        <table>
+            <tr> <td width="120px"> Product Name: </td><td> <input type="text" name="product_name" class="mytextfield"/> </td> <tr>
+            <tr> <td width="100px"> Product Price: </td><td> <input type="text" name="product_price" class="mytextfield"/> </td> <tr>
+            <tr> <td></td><td><input type="submit" name="add_item_toDB" value="Add this product" class="button3" /></td></tr>
+        </table>
+        
+    </form>
+{% endif %}
+
+</form>
+<br>
+<div>
+    <table>
+        <tr> <td> <a href="http://localhost:8000/profile"> My Profile </a> </td> <td> </td> </tr>
+        <tr> <td> <a href="http://localhost:8000/my_transactions"> My Transactions </a> </td> <td> </td> </tr>
+        <tr> <td> <a href="http://localhost:8000/my_store"> My Store </a> </td> </tr>
+        <tr> <td> <a href="http://localhost:8000/my_carts">My Carts<a> </td> <td> </td> </tr>
+        <tr> <td> <a href="http://localhost:8000/log_out">Logout <a> </td> <td> </td> </tr>
+    </table>
+</div>
+
+<hr size=3 width="50%" align=left>
+
+<div>
+    <a href="http://localhost:8000/">Home</a>
+</div>
+
+</body>

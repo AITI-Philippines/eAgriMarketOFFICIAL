@@ -1,0 +1,82 @@
+<head>
+    <link rel="stylesheet" href="/static/mainstyle.css" >
+    <div  style="font:Arial">
+        <h1>
+            <span style="font-size: 28px; font-family: tahoma, geneva, sans-serif; ">
+            <span style="color:#0000cd;">e</span>AgriBiz </span>|&nbsp;<span style="color:#696969;">
+            <span style="font-family: tahoma, geneva, sans-serif; font-size: 22px; ">
+            Bridging gaps</span></span>
+        </h1>
+    </div>
+</head>
+
+<hr noshade size=4 width="50%" align=left>
+
+<body>
+
+<div>
+<form method="get">
+    <input type="text" name="search_query" class="searchbar"/>
+    <input type="submit" value="Search" name="search_button" class="button3">
+</form>
+</div>
+<hr noshade size=4 width="50%" align=left>
+
+<div>
+<table>
+    <tr> <td> <h3> My Carts </h3> </td>  </tr>
+    {% if carts %}
+        {% for cart in carts %}
+			<tr> 
+				<td width="200px">  <b> {{ cart.name }} </b> </td>
+				<td width="30px"> <a href="http://localhost:8000/disposecart/{{ cart.id }}" > Dispose </a> </td>
+			</tr>
+        {% endfor %}
+		{% if not addCartEnabled %}
+			<form method="post">
+				<table>
+					<tr><td></td><td><input type="submit" name="add_cart" value="Create a cart" class="button3" /></td> </tr>
+				</table>
+			</form>
+		{% endif %}
+    {% else %}
+        <tr> <td> You do not have carts </td> </tr>		
+		<form method="post">
+			<table>
+				<tr><td></td><td><input type="submit" name="add_cart" value="Create a cart" class="button3" /></td> </tr>
+			</table>
+		</form>
+    {% endif %}
+	{% if addCartEnabled %}
+		<form method="post">
+			<table>
+				<tr> <td width="120px"> Cart Name: </td><td> <input type="text" name="cart_name" class="mytextfield"/> </td> <tr>
+				<tr> <td width="100px"> Cart Capacity: </td><td> <input type="text" name="cart_capacity" class="mytextfield"/> </td> <tr>
+				<tr><td></td><td><input type="submit" name="create_cart" value="Create cart" class="button3" /></td> </tr>
+			</table>
+		</form>
+	{% endif %}
+</table>
+</div>
+
+
+
+<hr size=3 width="50%" align=left>
+
+<div>
+    <table>
+        <tr> <td> <a href="http://localhost:8000/profile/"> My Profile </a> </td> </tr>
+        <tr> <td> <a href="http://localhost:8000/my_transactions"> My Transactions </a> </td> </tr>
+        <tr> <td> <a href="http://localhost:8000/my_store"> My Store </a> </td> </tr>
+		<tr> <td> <a href="http://localhost:8000/my_carts">My Carts<a> </td> <td> </td> </tr>
+        <tr> <td> <a href="http://localhost:8000/log_out">Logout </a> </td> </tr>
+    </table>
+</div>
+
+<hr size=3 width="50%" align=left>
+
+<div>
+    <a href="http://localhost:8000/profile">Home</a>
+</div>
+
+</body>

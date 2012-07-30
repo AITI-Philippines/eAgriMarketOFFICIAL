@@ -1,0 +1,60 @@
+<head>
+    <link rel="stylesheet" href="/static/mainstyle.css" >
+    <div  style="font:Arial">
+        <h1>
+            <span style="font-size: 28px; font-family: tahoma, geneva, sans-serif; ">
+            <span style="color:#0000cd;">e</span>AgriBiz </span>|&nbsp;<span style="color:#696969;">
+            <span style="font-family: tahoma, geneva, sans-serif; font-size: 22px; ">
+            Bridging gaps</span></span>
+        </h1>
+    </div>
+</head>
+
+<hr noshade size=4 width="50%" align=left>
+
+<body>
+<div>
+<form method="get">
+    <input type="text" name="search_query"/ class="searchbar">
+    <input type="submit" value="Search" name="search_button" class="button3">
+</form>
+</div>
+<hr noshade size=4 width="50%" align=left>
+
+<div>
+<table>
+    <tr> <td> <h3> Results </h3> </td>  </tr>
+    {% if query_matches %}
+        {% for match in query_matches %}
+		<tr> 
+			<td width="200px">  <b> {{ match.item_name }} </b> </td>
+			<td width="100px">  P{{ match.item_price }} </td>
+			<td width="200px"> <a  href="http://localhost:8000/profile/{{match.dealer.user.username}}" > {{ match.dealer.dealer_name }} </a> </td>
+			<td width="30px"> <a href="http://localhost:8000/buy/{{ match.id }}" > Buy </a> </td>
+		</tr>
+        {% endfor %}
+    {% else %}
+        <tr> <td> No results matched your query </td> </tr>
+    {% endif %}
+</table>
+</div>
+
+<hr size=3 width="50%" align=left>
+
+<div>
+    <table>
+        <tr> <td> <a href="http://localhost:8000/profile/"> My Profile </a> </td> </tr>
+        <tr> <td> <a href="http://localhost:8000/my_transactions"> My Transactions </a> </td> </tr>
+        <tr> <td> <a href="http://localhost:8000/my_store"> My Store </a> </td> </tr>
+		<tr> <td> <a href="http://localhost:8000/my_carts">My Carts<a> </td> <td> </td> </tr>
+        <tr> <td> <a href="http://localhost:8000/log_out">Logout </a> </td> </tr>
+    </table>
+</div>
+
+<hr size=3 width="50%" align=left>
+
+<div>
+    <a href="http://localhost:8000/profile">Home</a>
+</div>
+
+</body>

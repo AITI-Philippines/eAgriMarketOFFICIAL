@@ -4,8 +4,11 @@ Description:
 eAgriMarket is an online channel that simulates a market for manufacturers, retailers, wholesalers, and consumers
 
 What can you do with eAgriMarket?
+
 1. Setup your own establishment. Add products to your store. Set their prices. Create carts and specify purchase 
 minimum requirements. View your most recent transactions. View purchase requests.
+
+2. Buy the products you need. Search for products. Know  
 
 Members of the team:
 Armond Ave, davecroman@gmail.com

@@ -8,7 +8,10 @@ What can you do with eAgriMarket?
 1. Setup your own establishment. Add products to your store. Set their prices. Create carts and specify purchase 
 minimum requirements. View your most recent transactions. View purchase requests.
 
-2. Buy the products you need. Search for products. Know  
+2. Buy the products you need. Search for products. Identify their prices, description, etc. Know which vendors in your
+area sell that product. Issue purchase requests.
+
+3. Do what you can in a real market. Haggle. Trade. Create deals.
 
 Members of the team:
 Armond Ave, davecroman@gmail.com

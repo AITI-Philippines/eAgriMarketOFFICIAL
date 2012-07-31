@@ -5,8 +5,8 @@ eAgriMarket is an online channel that simulates a market for manufacturers, reta
 
 What can you do with eAgriMarket?
 
-1. Setup your own establishment. Add products to your store. Set their prices. Create carts and specify purchase 
-minimum requirements. View your most recent transactions. View purchase requests.
+1. Setup your own establishment. Add products to your store. Set their prices. Create carts and specify minimum purchase 
+requirements. View your most recent transactions. View purchase requests.
 
 2. Buy the products you need. Search for products. Identify their prices, description, etc. Know which vendors in your
 area sell that product. Issue purchase requests.
@@ -20,5 +20,5 @@ Aubrey Pascual, aubreypascual@facebook.com
 Francis Gallardo, fjdgallardo@gmail.com
 
 Github URL:
-git@github.com:AITI-Philippines/eAgriMarketOFFICIAL.git
+https://github.com/AITI-Philippines/eAgriMarketOFFICIAL/wiki
 

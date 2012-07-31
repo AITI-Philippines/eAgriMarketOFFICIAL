@@ -1,0 +1,52 @@
+<head>
+	<link rel="stylesheet" href="/static/mainstyle.css" >
+	
+	<style>
+	#map_canvas {
+	height: 300px;
+	width:50%;
+	 }
+
+	</style>  
+</head>
+
+ <body >
+    <div  style="font:Arial">
+		<h1>
+			<span style="font-size: 28px; font-family: tahoma, geneva, sans-serif; ">
+			<span style="color:#0000cd;">e</span>AgriBiz </span>|&nbsp;<span style="color:#696969;">
+			<span style="font-family: tahoma, geneva, sans-serif; font-size: 22px; ">
+			Bridging gaps</span></span>
+		</h1>
+	</div>
+	
+	<hr noshade size=4 width="75%" align=left>
+	
+	<div>
+		<form>
+			<input type="text" name="search_query" class="searchbar"/>
+			<input type="submit" value="Search" class="mainbutton">
+		</form>
+	</div>
+	
+	<hr noshade size=4 width="75%" align=left>
+	    <table>
+			<tr> <td> <a href="http://localhost:8000/profile" class="linkbutton"> My Profile </a> </td> 
+				 <td> <a href="http://localhost:8000/my_transactions" class="linkbutton"> My Transactions </a> </td>
+				 <td> <a href="http://localhost:8000/my_store" class="linkbutton"> My Store </a> </td>
+				 <td> <a href="http://localhost:8000/my_carts" class="linkbutton">My Carts<a> </td>
+				 <td> <a href="http://localhost:8000/log_out" class="linkbutton">Logout <a> </td> 
+			</tr>
+	    </table>
+	
+	{% block mainbody %}
+	
+	{% endblock %}
+	
+	
+	<hr size=3 width="75%" align=left>
+
+	<div>
+		<a href="http://localhost:8000/profile">Home</a>
+	</div>
+</body >
